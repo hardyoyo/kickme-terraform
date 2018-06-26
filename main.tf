@@ -4,8 +4,8 @@ provider "aws" {
 
 # create a base Samvera server
 resource "aws_instance" "kickme" {
-  ami = "ami-d07d31a8" #use my kickme/hyrax AMI
-  instance_type = "t2.small"
+  ami = "ami-30e6ae48" #use my kickme/hyrax AMI
+  instance_type = "c5d.large"
   key_name = "hpottinger"
   security_groups = ["hardy_sHouse"]
   tags {
